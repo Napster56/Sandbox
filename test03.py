@@ -11,7 +11,7 @@ print(books)
 
 out_file = open("books.csv", "w")
 for record in books:
-    for str_record in record:
+    for value in record:
         str_record = " ".join(record)
         str_record += "\n"
     out_file.write(str_record)
