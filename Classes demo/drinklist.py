@@ -16,6 +16,7 @@ class DrinkList:
 
     def get_number_alcoholic(self):
         return len([1 for drink in self.drinks if drink.is_alcoholic()])
+
     """ return sum([])         # replaced by above list comprehension
         count = 0
         for drink in self.drinks:
@@ -28,6 +29,7 @@ class DrinkList:
 
     def get_total_price(self):
         return sum([drink.price for drink in self.drinks])
+
 
 # Suggest putting tests in a separate tests_file
 def run_tests():  # DO NOT pass a List into function because it is mutable!!!
