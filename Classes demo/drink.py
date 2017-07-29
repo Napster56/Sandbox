@@ -4,6 +4,7 @@
 
 class Drink:
     MINIMUM_ALCOHOL_THRESHOLD = 0.00     # class attribute
+
     def __init__(self, name="", price=0.0, volume=0.0, alcohol_content=0.0 ):
         self.name = name
         self.price = price

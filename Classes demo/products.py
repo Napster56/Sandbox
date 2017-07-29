@@ -16,8 +16,8 @@ print(on_sale_products)
 
 class Product:
     def __init__(self, name="", price="", is_on_sale=False):  # constructor method
-        self.name = name
-        self.price = price
+        self.name = name                 # self is this particular object
+        self.price = price               # name is a parameter stored in self
         self.is_on_sale = is_on_sale
 
     def __str__(self):
