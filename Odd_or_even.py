@@ -5,6 +5,10 @@ The program should not crash if he user enters an invalid age number.
 The user is re-prompted until a valid number is entered.
 """
 
+age = 13
+name = "David"
+x = age + name
+print(x)
 
 def main():
 
@@ -26,7 +30,7 @@ def main():
 
 
 def is_even(number):        # pass number into fn as a parameter
-    return number % 2 == 0   # just returns the condition but maybe less readable
+    return number % 2   # just returns the condition but maybe less readable
     # if number % 2 == 0:
     #     return True
     # else:

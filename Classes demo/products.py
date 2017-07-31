@@ -1,3 +1,8 @@
+
+
+
+
+
 products = [["Phone", 340, False],
             ["PC", 1420.95, False],
             ["Plant", 24.5, True],
@@ -27,6 +32,7 @@ class Product:
         return "{} ${:.2f} {}".format(self.name, self.price, on_sale_string)
 
     def put_on_sale(self, discount):
+        # discoun t is specified as a decimal, 0.31 = 31%
         self.is_on_sale = True
         self.price -= self.price * discount
 
@@ -38,16 +44,22 @@ class Product:
 # print(p, type(p))   # prints object & type
 # p.         # view methods & attributes available
 
-products = [Product("Phone", 200, False),
-            Product("PC", 1420.95, False),
-            Product("Plant", 24.5, True),
-            Product("Bottle", 420.95, True)]
+# products = [Product("Phone", 200, False),
+#             Product("PC", 1420.95, False),
+#             Product("Plant", 24.5, True),
+#             Product("Bottle", 420.95, True)]
 
-for product in products:
-    print(product)
+def run_tests():
+    p1 = Product("Phone", 340)
+    p2 = Product("Taco", 908.7, True)
+    print(p1, p2)
+run_tests()
 
-products[0].put_on_sale(0.3)
-print(products[0])
-
-on_sale_products = [product.name for product in products if product.is_on_sale]
-print(on_sale_products)
+# for product in products:
+#     print(product)
+#
+# products[0].put_on_sale(0.3)
+# print(products[0])
+#
+# on_sale_products = [product.name for product in products if product.is_on_sale]
+# print(on_sale_products)
