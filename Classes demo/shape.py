@@ -11,6 +11,7 @@ class Shape:
     def move(self, x_amount, y_amount):
         self.x = x_amount
         self.y = y_amount
+        # move method has an implicit return of 'None'
 
     def __str__(self):
-        return "Shape at ({}, {})".format(self.x,self.y)
+        return "Shape at ({}, {})".format(self.x, self.y)
